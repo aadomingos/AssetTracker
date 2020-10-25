@@ -1,7 +1,12 @@
-// This #include statement was automatically added by the Particle IDE.
-#include <google-maps-device-locator.h>
+/* -----------------------------------------------------------
+This example shows a lot of different features. As configured here
+it will check for a good GPS fix every 10 minutes and publish that data
+if there is one. If not, it will save you data by staying quiet. It also
+registers 3 Particle.functions for changing whether it publishes,
+reading the battery level, and manually requesting a GPS reading.
+---------------------------------------------------------------*/
 
-// This #include statement was automatically added by the Particle IDE.
+// Getting the library
 #include "AssetTracker.h"
 
 // Set whether you want the device to publish data to the internet by default here.

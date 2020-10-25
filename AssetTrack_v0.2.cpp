@@ -1,3 +1,9 @@
+/******************************************************/
+//       THIS IS A GENERATED FILE - DO NOT EDIT       //
+/******************************************************/
+
+#include "Particle.h"
+#line 1 "/Users/AADAir/GitHub/AssetTracker/AssetTrack_v0.2.ino"
 // This #include statement was automatically added by the Particle IDE.
 #include <google-maps-device-locator.h>
 
@@ -8,6 +14,12 @@
 // 1 will Particle.publish AND Serial.print, 0 will just Serial.print
 // Extremely useful for saving data while developing close enough to have a cable plugged in.
 // You can also change this remotely using the Particle.function "tmode" defined in setup()
+void setup();
+void loop();
+int transmitMode(String command);
+int gpsPublish(String command);
+int batteryStatus(String command);
+#line 11 "/Users/AADAir/GitHub/AssetTracker/AssetTrack_v0.2.ino"
 int transmittingData = 1;
 
 // Used to keep track of the last time we published data
