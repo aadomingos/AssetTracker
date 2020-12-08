@@ -37,6 +37,11 @@ FuelGauge fuel;
 // setup() and loop() are both required. setup() runs once when the device starts
 // and is used for registering functions and variables and initializing things
 void setup() {
+    / These three functions are useful for remote diagnostics. Read more below.
+    Particle.function("tmode", transmitMode);
+    Particle.function("batt", batteryStatus);
+    Particle.function("gps", gpsPublish);
+    
     // Sets up all the necessary AssetTracker bits
     t.begin();
 
@@ -47,10 +52,7 @@ void setup() {
     // Opens up a Serial port so you can listen over USB
     Serial.begin(9600);
 
-    // These three functions are useful for remote diagnostics. Read more below.
-    Particle.function("tmode", transmitMode);
-    Particle.function("batt", batteryStatus);
-    Particle.function("gps", gpsPublish);
+    /
 }
 
 // loop() runs continuously
